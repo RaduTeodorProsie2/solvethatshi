@@ -16,6 +16,12 @@ set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
+# Set compiler options globally
+add_compile_options(
+    /DANNOTATE_STRING=1
+    /DANNOTATE_VECTOR=1
+)
+
 include(cmake/Options.cmake)
 include(cmake/CompilerFlags.cmake)
 include(cmake/CopyHelper.cmake)
