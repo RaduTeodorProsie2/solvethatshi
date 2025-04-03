@@ -159,7 +159,7 @@ jobs:
             c: gcc
             cxx: g++
             name: "Windows 2022 MinGW GCC 13"
-            cmake_flags: -DBUILD_SHARED_LIBS=TRUE
+            cmake_flags: -DBUILD_SHARED_LIBS=FALSE
             cmake_generator: Ninja
 
     steps:
