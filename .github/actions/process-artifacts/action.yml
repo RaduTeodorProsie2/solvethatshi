@@ -71,3 +71,8 @@ runs:
           gcc/mingw64/bin/libgcc_s_seh-1.dll \
           gcc/mingw64/bin/libwinpthread-1.dll \
           ${GITHUB_WORKSPACE}/${{ env.ZIP_NAME }}
+
+    - name: Copy assets folder
+      shell: bash
+      run: |
+        cp -r ${GITHUB_WORKSPACE}/assets ${GITHUB_WORKSPACE}/${{ env.ZIP_NAME }}/assets
